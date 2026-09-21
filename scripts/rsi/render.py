@@ -8,6 +8,7 @@ CI) fails when a committed copy differs from what the data now implies.
 from __future__ import annotations
 
 import csv
+from html import escape
 import io
 import json
 import re
@@ -107,6 +108,38 @@ def render_entry(entry: Entry, taxonomy: Taxonomy) -> str:
     )
 
 
+def render_readme_entry(entry: Entry, taxonomy: Taxonomy) -> str:
+    """A readable paper card, with full taxonomy available on demand.
+
+    Keep the compact renderer for the dimension index; README disclosures are
+    presentation only and must not change the corpus or omit resource links.
+    """
+    links = entry.links
+    resources = [
+        f"[{_link_label(k)}]({_link_url(k, links[k])})"
+        for k in LINK_ORDER
+        if k in links and _link_url(k, links[k]) != entry.url
+    ]
+    metadata = f"{entry.authors_short} · **{entry['venue']}**"
+    if resources:
+        metadata += " · " + " · ".join(resources)
+    rows = ["| Dimension | Classification |", "| --- | --- |"]
+    for name in taxonomy.axis_names():
+        values = " · ".join(f"`{v}`" for v in entry.values(name))
+        rows.append(f"| {taxonomy.axis(name).title} | {values} |")
+    if entry.tags:
+        rows.append("| Topic tags | " + " · ".join(f"`{t}`" for t in entry.tags) + " |")
+    summary = escape(f"{entry['recursion']} · {', '.join(entry.values('domain'))}")
+    return (
+        f"**[{entry.title}]({entry.url})**\n\n"
+        f"{metadata}\n\n"
+        f"{entry['tldr']}\n\n"
+        f"<details>\n<summary>Classification · {summary}</summary>\n\n"
+        + "\n".join(rows)
+        + "\n\n</details>\n\n---\n"
+    )
+
+
 def render_sections(entries: Sequence[Entry], taxonomy: Taxonomy) -> str:
     axis = taxonomy.axis("stage")
     out: list[str] = []
@@ -125,7 +158,7 @@ def render_sections(entries: Sequence[Entry], taxonomy: Taxonomy) -> str:
                 f"[back to contents](#contents)</sub>"
             )
             out.append("")
-            out.extend(render_entry(e, taxonomy) for e in bucket)
+            out.extend(render_readme_entry(e, taxonomy) for e in bucket)
         else:
             out.append(
                 f"<sub>`stage: {term.key}` · no entries yet - "
@@ -142,10 +175,10 @@ def render_toc(entries: Sequence[Entry], taxonomy: Taxonomy) -> str:
     for i, term in enumerate(axis.terms, start=1):
         n = sum(1 for e in entries if e.primary_stage == term.key)
         rows.append(
-            f"| {i} | [{term.label}](#{github_anchor(term.label)}) | {n} | {term.short} |"
+            f"| {i} | [{term.label}](#{github_anchor(term.label)}) | {n} |"
         )
     return "\n".join(
-        ["| # | Section | Entries | Short name |", "| --: | --- | --: | --- |", *rows]
+        ["| # | Explore by loop stage | Entries |", "| --: | --- | --: |", *rows]
     )
 
 
@@ -206,6 +239,15 @@ def render_figures() -> str:
         grid.append(cell)
         if i % 2 == 0 and i != len(table_rows):
             grid.extend(["</tr>", "<tr>"])
+    if len(table_rows) % 2:
+        grid.append(
+            '<td width="50%" align="center">'
+            '<strong>Explore the evidence</strong><br><br>'
+            '<a href="docs/stats.md">Statistics &amp; coverage gaps</a><br>'
+            '<a href="docs/index-by-dimension.md">Browse all six dimensions</a><br>'
+            '<a href="docs/methodology.md">Read the inclusion methodology</a>'
+            '</td>'
+        )
     grid.extend(["</tr>", "</table>"])
     blocks.append("\n".join(grid))
     blocks.append(
@@ -221,12 +263,15 @@ def render_summary(entries: Sequence[Entry], taxonomy: Taxonomy) -> str:
     recursion = summary["counts"]["recursion"]
     deep = sum(v for k, v in recursion.items() if k in ("iterated", "online", "open-ended"))
     share = round(100 * deep / max(len(entries), 1))
-    top_stage = max(summary["counts"]["primary_stage"].items(), key=lambda kv: (kv[1], kv[0]))
     return (
-        f"**{len(entries)}** entries · **{years['min']}-{years['max']}** · "
-        f"**{share}%** run the loop more than once "
-        f"(`iterated`, `online` or `open-ended`) · biggest section: "
-        f"**{taxonomy.stage.label(top_stage[0])}** ({top_stage[1]})"
+        '<table>\n<tr>\n'
+        f'<td align="center" width="25%"><strong>{len(entries)}</strong><br><sub>CURATED ENTRIES</sub></td>\n'
+        f'<td align="center" width="25%"><strong>{len(taxonomy.stage.terms)}</strong><br><sub>LOOP STAGES</sub></td>\n'
+        f'<td align="center" width="25%"><strong>{years["min"]}–{years["max"]}</strong><br><sub>PUBLICATION YEARS</sub></td>\n'
+        f'<td align="center" width="25%"><strong>{share}%</strong><br><sub>MULTI-ROUND LOOPS</sub></td>\n'
+        '</tr>\n</table>\n\n'
+        '<sub>Multi-round = `iterated`, `online` or `open-ended`; see '
+        '[recursion definitions](docs/taxonomy.md#recursion-depth).</sub>'
     )
 
 
