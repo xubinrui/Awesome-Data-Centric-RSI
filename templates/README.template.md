@@ -5,15 +5,38 @@
 -->
 <div align="center">
 
-# Awesome Data-Centric Recursive Self-Improvement
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/cover-dark.svg">
+  <img src="assets/brand/cover-light.svg" alt="Better data. Better loops. Generate, curate, verify and learn in a repeating feedback loop." width="1100">
+</picture>
 
-**A curated, machine-checked survey of systems that get better by improving their own data.**
+# Awesome Data-Centric RSI
+
+**Recursive self-improvement, through the lens of data.**
+
+A curated, machine-checked reading list on systems that improve what they learn from.
 
 {{badges}}
 
-{{summary}}
+**[Browse papers](#contents)** · **[Taxonomy](docs/taxonomy.md)** · **[Visual overview](#at-a-glance)** · **[Contribute](#contributing)**
 
 </div>
+
+{{summary}}
+
+Follow the loop from **generation → curation → verification → assimilation**, then explore
+curriculum, memory, self-modification, measurement and long-run dynamics.
+[Scope & inclusion rules](#scope) · [How to read an entry](#how-to-read-an-entry)
+
+## Contents
+
+{{toc}}
+
+<sub>Sections follow the primary loop stage. Within each section, newer recorded paper years come first (these can differ from venue years). All counts are generated from the current corpus.</sub>
+
+---
+
+{{entries}}
 
 ---
 
@@ -39,25 +62,25 @@ described loop. The full rules, including how borderline cases are decided, are 
 ## The loop
 
 ```mermaid
-flowchart LR
-    G["Generation<br/><i>propose candidate data</i>"]
-    C["Curation<br/><i>keep what is worth keeping</i>"]
-    V["Verification<br/><i>decide what is correct</i>"]
-    A["Assimilation<br/><i>fold it back in</i>"]
+flowchart TD
+    G["Generation"]
+    C["Curation"]
+    V["Verification"]
+    A["Assimilation"]
 
     G --> C --> V --> A
     A -- "next round" --> G
 
-    K["Curriculum<br/><i>grow the task space</i>"]
-    M["Memory<br/><i>experience outside the weights</i>"]
-    S["Scaffold<br/><i>rewrite the system itself</i>"]
+    K["Curriculum"]
+    M["Memory"]
+    S["Scaffold"]
 
     A --> K --> G
     A --> M --> G
     A --> S --> G
 
-    ME["Measurement<br/><i>is it actually improving?</i>"]
-    D["Dynamics<br/><i>what breaks after n rounds</i>"]
+    ME["Measurement"]
+    D["Dynamics"]
 
     A --> ME
     A --> D
@@ -68,43 +91,36 @@ flowchart LR
 The nine sections of this list are the nine boxes above. An entry is filed under the box
 its contribution lands on and tagged with every other box it touches.
 
-## At a glance
-
-{{figures}}
-
 ## How to read an entry
 
-Every entry carries the same six dimensions, so the list can be re-cut along any of them
-(see [docs/index-by-dimension.md](docs/index-by-dimension.md)):
+Each paper shows its title, authors, venue, resource links and a one-sentence summary.
+Open **Classification** below a paper for all six dimensions and its topic tags.
+Browse across papers in the [dimension index](docs/index-by-dimension.md).
+
+<details>
+<summary><strong>The six dimensions</strong> — field definitions and allowed values</summary>
 
 {{legend}}
 
-An entry line looks like this:
+</details>
 
-> - **[Paper title](https://arxiv.org/abs/0000.00000)** · Author et al. · Venue 2024 · [code](https://example.com)<br>
->   <sub>One sentence on what the loop does.</sub><br>
->   <sub>**loop** `iterated` · **signal** `verifier` · **also** `curation` · **artefact** `data` `weights` · **domain** `math` · **type** `method`</sub>
+## At a glance
 
-`loop` is the recursion depth, `signal` is what separates good data from bad, `also`
-lists the other stages the work touches, and `artefact` is what the loop leaves changed.
+A visual overview of the **current collection**, not a census of the field.
+[View the underlying numbers](docs/stats.md) · [Explore coverage gaps](docs/stats.md#coverage-gaps)
 
-## Contents
+<details>
+<summary><strong>Open the research atlas</strong> — timeline, signals, domains and recursion depth</summary>
 
-{{toc}}
+{{figures}}
 
-- [Contributing](#contributing) · [How this list stays correct](#how-this-list-stays-correct) · [Citation](#citation)
-
----
-
-{{entries}}
-
----
+</details>
 
 ## How this list stays correct
 
-A survey rots unless the rules are executable. Everything in this repository except
-`data/` and the prose in `templates/` is generated, and every pull request is checked
-by CI before a human reads it:
+Entries in `data/` are the source of truth. The README, reference docs, exports and
+statistical figures are generated from them. The presentation lives in `templates/`,
+`scripts/rsi/render.py` and `assets/brand/`. Pull requests are checked by CI:
 
 | Gate | What it enforces |
 | --- | --- |
