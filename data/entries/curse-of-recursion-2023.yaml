@@ -1,0 +1,26 @@
+id: curse-of-recursion-2023
+title: "The Curse of Recursion: Training on Generated Data Makes Models Forget"
+authors:
+  - Ilia Shumailov
+  - Zakhar Shumaylov
+  - Yiren Zhao
+  - Yarin Gal
+  - Nicolas Papernot
+  - Ross Anderson
+year: 2023
+venue: arXiv 2023
+venue_type: preprint
+links:
+  arxiv: "2305.17493"
+tldr: >-
+  Shows that training generation after generation on model output erodes the
+  tails of the distribution first, so a closed synthetic loop forgets rare
+  events before it degrades on average.
+stage: [dynamics]
+signal: [intrinsic]
+recursion: iterated
+artifact: [data]
+domain: [language, theory]
+contribution: analysis
+tags: [diversity, model-collapse]
+added: "2026-09-21"

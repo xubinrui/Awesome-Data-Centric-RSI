@@ -1,0 +1,25 @@
+id: dsir-2023
+title: Data Selection for Language Models via Importance Resampling
+authors:
+  - Sang Michael Xie
+  - Shibani Santurkar
+  - Tengyu Ma
+  - Percy Liang
+year: 2023
+venue: NeurIPS 2023
+venue_type: conference
+links:
+  arxiv: "2302.03169"
+  code: https://github.com/p-lambda/dsir
+tldr: >-
+  Selects pretraining text by importance resampling against a target
+  distribution in n-gram feature space, making "what belongs in this corpus" a
+  cheap, tunable decision.
+stage: [curation]
+signal: [intrinsic]
+recursion: single-pass
+artifact: [data]
+domain: [language]
+contribution: method
+tags: [data-mixing]
+added: "2026-09-21"

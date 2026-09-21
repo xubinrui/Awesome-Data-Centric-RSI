@@ -1,0 +1,31 @@
+id: alphago-zero-2017
+title: Mastering the game of Go without human knowledge
+authors:
+  - David Silver
+  - Julian Schrittwieser
+  - Karen Simonyan
+  - Ioannis Antonoglou
+  - Aja Huang
+  - Arthur Guez
+  - Thomas Hubert
+  - Lucas Baker
+  - Matthew Lai
+  - Adrian Bolton
+  - et al.
+year: 2017
+venue: Nature 2017
+venue_type: journal
+links:
+  doi: "10.1038/nature24270"
+tldr: >-
+  Learns Go from random play by treating its own tree search as the teacher,
+  evidence that a self-play data loop with no human games can overtake systems
+  trained on them.
+stage: [generation, assimilation, curriculum]
+signal: [self, environment]
+recursion: online
+artifact: [data, weights]
+domain: [games]
+contribution: method
+tags: [classic, expert-iteration, self-play]
+added: "2026-09-21"

@@ -1,0 +1,394 @@
+# Controlled vocabulary for Awesome Data-Centric RSI.
+#
+# This file is the single source of truth for every dimension an entry may use.
+# `scripts/validate.py` rejects any entry that uses a term not listed here, and
+# `scripts/build.py` renders README sections, docs/taxonomy.md and every figure
+# from the order and labels below. Adding a term is a deliberate, reviewable act:
+# open a "taxonomy change" issue first (see .github/ISSUE_TEMPLATE).
+#
+# Vocabulary keys are lowercase kebab-case and are permanent once merged -
+# rename the `label`, never the key, or every existing entry silently changes
+# meaning.
+
+version: 1
+
+axes:
+
+  stage:
+    title: Loop stage
+    slug: stage
+    cardinality: many          # ordered list; the first value is the primary section
+    required: true
+    question: >-
+      Which turn of the data flywheel does this work act on? The first value
+      decides which README section the entry is filed under.
+    values:
+      - key: generation
+        label: Data Generation & Synthesis
+        short: Generation
+        summary: >-
+          Producing new training data - instructions, traces, problems, proofs,
+          rollouts - from a model, a program, or a simulator rather than from
+          human annotators.
+        includes:
+          - Self-instruct style bootstrapping and instruction evolution
+          - Synthetic pretraining corpora and textbook-style data
+          - Rejection sampling / best-of-n traces harvested for training
+        excludes:
+          - Human-annotated dataset releases with no model in the loop
+      - key: curation
+        label: Selection, Filtering & Mixing
+        short: Curation
+        summary: >-
+          Deciding what to keep, drop, weight or reorder in a corpus - quality
+          filters, deduplication, influence/attribution, domain mixing.
+        includes:
+          - Importance resampling, influence functions, datamodels, coresets
+          - Deduplication, decontamination, quality classifiers
+          - Domain-mixture optimisation and data-constrained scaling
+        excludes:
+          - Pure architecture or optimiser work with a fixed corpus
+      - key: verification
+        label: Verification, Reward & Judging
+        short: Verification
+        summary: >-
+          Manufacturing the correctness signal that lets a loop keep its own
+          output - verifiers, process reward models, executable checks, judges.
+        includes:
+          - Outcome and process reward models, verifier training
+          - LLM-as-a-judge, self-taught evaluators, debate and prover-verifier
+          - Execution, unit tests and formal proof checking as a data filter
+        excludes:
+          - Human preference collection without a model-side judge
+      - key: assimilation
+        label: Assimilation & Self-Training
+        short: Assimilation
+        summary: >-
+          Folding the loop's own accepted output back into the weights -
+          self-training, expert iteration, self-play RL, distillation.
+        includes:
+          - STaR / ReST / expert-iteration style iterated fine-tuning
+          - Self-play and self-rewarding preference optimisation
+          - Distillation from a stronger or from a past self
+        excludes:
+          - Prompt-only improvement that never updates parameters
+      - key: curriculum
+        label: Task, Curriculum & Environment Generation
+        short: Curriculum
+        summary: >-
+          Growing the problem distribution itself: generating tasks, goals,
+          environments and difficulty schedules that keep the loop learnable.
+        includes:
+          - Automatic task / environment generation and open-ended search
+          - Difficulty scheduling, statement curricula, goal proposal
+          - Reward-function synthesis for new tasks
+        excludes:
+          - Fixed benchmarks used only for evaluation
+      - key: memory
+        label: Experience, Memory & Skill Libraries
+        short: Memory
+        summary: >-
+          Non-parametric self-improvement: accumulating experience, skills and
+          workflows that change future behaviour without a weight update.
+        includes:
+          - Skill libraries, agent workflow memory, experience replay for agents
+          - Verbal reinforcement and reflection stores
+          - Long-term memory architectures for agents
+        excludes:
+          - Plain retrieval over a static corpus
+      - key: scaffold
+        label: Scaffold & Self-Modification
+        short: Scaffold
+        summary: >-
+          The system rewrites the artefact that produced it - its prompts, its
+          code, its agent graph - instead of (or as well as) its data.
+        includes:
+          - Self-referential code improvement and agent-design search
+          - Prompt evolution and textual gradient optimisation
+          - Automated design of agentic systems
+        excludes:
+          - Manual prompt engineering studies
+      - key: measurement
+        label: Benchmarks & Measurement
+        short: Measurement
+        summary: >-
+          The instruments: benchmarks, evaluation substrates and metrics that
+          make claims about self-improvement falsifiable.
+        includes:
+          - Benchmarks for autonomous R&D, ML engineering and software agents
+          - Evaluation protocol and judge-reliability studies
+          - Capability-trend measurement across model generations
+        excludes:
+          - Leaderboards without a released, reproducible task set
+      - key: dynamics
+        label: Loop Dynamics, Limits & Safety
+        short: Dynamics
+        summary: >-
+          What happens when the loop runs many times - collapse, drift, reward
+          hacking, diversity loss, and the theory that predicts them.
+        includes:
+          - Model collapse, self-consuming loops, data accumulation effects
+          - Reward over-optimisation, self-preference bias, deceptive feedback
+          - Scaling laws for repeated, pruned or synthetic data
+        excludes:
+          - Generic robustness work unrelated to a training loop
+
+  signal:
+    title: Improvement signal
+    slug: signal
+    cardinality: many
+    required: true
+    question: >-
+      Where does the signal that separates good data from bad data come from?
+    values:
+      - key: self
+        label: Self-generated
+        short: Self
+        summary: The same model critiques, scores or filters its own output.
+      - key: peer-model
+        label: Peer or teacher model
+        short: Peer model
+        summary: >-
+          A separate model provides the signal - a stronger teacher, a reward
+          model, an ensemble, or an LLM judge.
+      - key: verifier
+        label: Programmatic verifier
+        short: Verifier
+        summary: >-
+          A deterministic check decides: unit tests, execution, answer match,
+          a proof assistant or a symbolic engine.
+      - key: environment
+        label: Environment feedback
+        short: Environment
+        summary: >-
+          An interactive environment or game returns reward, success or failure.
+      - key: human
+        label: Human supervision
+        short: Human
+        summary: >-
+          Human seeds, demonstrations, preferences or annotations are a load
+          bearing part of the loop.
+      - key: intrinsic
+        label: Intrinsic statistics
+        short: Intrinsic
+        summary: >-
+          No external judge - likelihood, agreement, uncertainty, influence or
+          novelty statistics carry the signal.
+
+  recursion:
+    title: Recursion depth
+    slug: recursion
+    cardinality: one
+    required: true
+    ordinal: true              # rendered with an ordinal ramp, not categorical hues
+    question: >-
+      How many times does the output of the loop re-enter its own input, and
+      does the loop get to change its own problem space?
+    values:
+      - key: single-pass
+        label: Single pass
+        short: Single pass
+        summary: >-
+          A one-shot pipeline. Data is produced or curated once; no output of
+          the system is fed back into a later round of itself.
+      - key: bootstrap
+        label: One bootstrap round
+        short: Bootstrap
+        summary: >-
+          Generate, filter, train - once. The improved model is the end of the
+          study, not the seed of the next round.
+      - key: iterated
+        label: Iterated rounds
+        short: Iterated
+        summary: >-
+          The same loop is run for N rounds, each round seeded by the model the
+          previous round produced.
+      - key: online
+        label: Continuous / online loop
+        short: Online
+        summary: >-
+          The loop runs continuously during training or deployment; there is no
+          clean round boundary.
+      - key: open-ended
+        label: Open-ended
+        short: Open-ended
+        summary: >-
+          The loop also expands its own task, goal or environment space, so the
+          objective is never fixed.
+
+  artifact:
+    title: Improved artefact
+    slug: artifact
+    cardinality: many
+    required: true
+    question: What does the loop actually leave changed?
+    values:
+      - key: data
+        label: Dataset / corpus
+        short: Data
+        summary: The persistent output is a corpus, not a model.
+      - key: weights
+        label: Model weights
+        short: Weights
+        summary: Parameters are updated by the loop.
+      - key: prompt
+        label: Prompts & instructions
+        short: Prompt
+        summary: The loop optimises text that conditions a frozen model.
+      - key: scaffold
+        label: Agent scaffold / code
+        short: Scaffold
+        summary: The loop rewrites the surrounding program or agent graph.
+      - key: tools
+        label: Tools & skills
+        short: Tools
+        summary: The loop accumulates reusable tools, skills or workflows.
+      - key: environment
+        label: Tasks & environments
+        short: Environment
+        summary: The loop produces new tasks, problems or environments.
+      - key: verifier
+        label: Verifier / reward model
+        short: Verifier
+        summary: The loop improves the thing that judges, not the thing judged.
+
+  domain:
+    title: Domain
+    slug: domain
+    cardinality: many
+    required: true
+    question: Where is the loop demonstrated?
+    values:
+      - key: language
+        label: General language
+        short: Language
+        summary: Instruction following, alignment, general-purpose text.
+      - key: code
+        label: Code & software
+        short: Code
+        summary: Program synthesis, software engineering, execution feedback.
+      - key: math
+        label: Mathematics & reasoning
+        short: Math
+        summary: Mathematical problem solving and formal theorem proving.
+      - key: agent
+        label: Agents & embodiment
+        short: Agent
+        summary: Tool use, web/OS agents, embodied and robotic control.
+      - key: multimodal
+        label: Multimodal
+        short: Multimodal
+        summary: Vision, audio or joint-modality loops.
+      - key: science
+        label: Scientific discovery
+        short: Science
+        summary: Automated research, experiment design, algorithm discovery.
+      - key: games
+        label: Games & control
+        short: Games
+        summary: Board games, video games and classical RL control.
+      - key: theory
+        label: Theory & domain-general
+        short: Theory
+        summary: >-
+          Results about loops in general rather than in one application - proofs,
+          statistical models, frameworks and position arguments.
+
+  contribution:
+    title: Contribution type
+    slug: contribution
+    cardinality: one
+    required: true
+    question: What kind of artefact is the paper itself?
+    values:
+      - key: method
+        label: Method
+        short: Method
+        summary: A new technique, algorithm or training recipe.
+      - key: dataset
+        label: Dataset / model release
+        short: Dataset
+        summary: A released corpus, recipe or model whose contribution is the data.
+      - key: benchmark
+        label: Benchmark
+        short: Benchmark
+        summary: An evaluation suite or measurement instrument.
+      - key: analysis
+        label: Empirical or theoretical analysis
+        short: Analysis
+        summary: A study of when and why a loop works or fails.
+      - key: survey
+        label: Survey
+        short: Survey
+        summary: A literature review or systematisation.
+      - key: toolkit
+        label: System / toolkit
+        short: Toolkit
+        summary: Open infrastructure for running these loops.
+      - key: position
+        label: Position paper
+        short: Position
+        summary: An argument about direction rather than a result.
+
+# Free-form-but-reviewed labels. Unlike axes, tags are optional and flat; they
+# exist so that cross-cutting themes stay searchable without inflating the axes.
+tags:
+  - key: self-play
+    summary: Two or more copies of a system generate each other's training signal.
+  - key: expert-iteration
+    summary: Search at inference time, distil the search result back into the policy.
+  - key: rejection-sampling
+    summary: Oversample, keep only what passes a filter, train on the survivors.
+  - key: distillation
+    summary: A stronger or slower teacher supplies targets for a student.
+  - key: rlaif
+    summary: Preference data authored by a model rather than a person.
+  - key: process-reward
+    summary: Step-level rather than outcome-level supervision.
+  - key: test-time-compute
+    summary: Trading inference compute for quality, often as a data generator.
+  - key: model-collapse
+    summary: Degradation caused by training on a model's own distribution.
+  - key: reward-hacking
+    summary: The loop optimises the measure and loses the goal.
+  - key: diversity
+    summary: Coverage, novelty or entropy of the generated data is the concern.
+  - key: open-endedness
+    summary: The system is meant never to converge.
+  - key: evolution
+    summary: Population-based or mutation/selection search.
+  - key: theorem-proving
+    summary: Formal mathematics with a proof assistant in the loop.
+  - key: deduplication
+    summary: Removing repeated or near-duplicate training text.
+  - key: data-mixing
+    summary: Choosing domain proportions in a corpus.
+  - key: scaling-laws
+    summary: Quantitative scaling behaviour of data quantity, quality or repetition.
+  - key: weak-to-strong
+    summary: A weaker supervisor eliciting stronger capability.
+  - key: instruction-tuning
+    summary: Post-training on instruction/response pairs.
+  - key: agent-memory
+    summary: Persistent experience stores for agents.
+  - key: reasoning-traces
+    summary: Long chains of thought treated as the training asset.
+  - key: classic
+    summary: Pre-LLM work that established the idea.
+
+# Venue types, used for the "how mature is this literature" cut.
+venue_types:
+  - key: conference
+    label: Conference
+  - key: journal
+    label: Journal
+  - key: workshop
+    label: Workshop
+  - key: preprint
+    label: Preprint
+  - key: tech-report
+    label: Technical report
+  - key: blog
+    label: Blog / release note
+  - key: thesis
+    label: Thesis

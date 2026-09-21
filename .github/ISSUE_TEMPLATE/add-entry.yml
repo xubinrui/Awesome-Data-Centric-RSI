@@ -1,0 +1,143 @@
+# GENERATED FILE - regenerate with `make build` after a taxonomy change.
+# Source: data/taxonomy.yaml
+name: Add an entry
+description: Propose a paper, dataset, benchmark or tool for the list
+title: "[entry] <paper title>"
+labels: [entry]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for contributing. You can also skip this form and open a pull request directly - see CONTRIBUTING.md. Everything below maps onto one field of data/entries/<id>.yaml."
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: "Exactly as published."
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: "arXiv abstract page, DOI or publisher page."
+    validations:
+      required: true
+  - type: textarea
+    id: tldr
+    attributes:
+      label: One-sentence summary
+      description: "What the loop does and what it leaves changed. No 'this paper', no benchmark numbers, no links."
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Loop stage
+      description: "Which turn of the data flywheel does this work act on? The first value decides which README section the entry is filed under."
+      multiple: true
+      options:
+        - "generation - Data Generation & Synthesis"
+        - "curation - Selection, Filtering & Mixing"
+        - "verification - Verification, Reward & Judging"
+        - "assimilation - Assimilation & Self-Training"
+        - "curriculum - Task, Curriculum & Environment Generation"
+        - "memory - Experience, Memory & Skill Libraries"
+        - "scaffold - Scaffold & Self-Modification"
+        - "measurement - Benchmarks & Measurement"
+        - "dynamics - Loop Dynamics, Limits & Safety"
+    validations:
+      required: true
+  - type: dropdown
+    id: signal
+    attributes:
+      label: Improvement signal
+      description: "Where does the signal that separates good data from bad data come from?"
+      multiple: true
+      options:
+        - "self - Self-generated"
+        - "peer-model - Peer or teacher model"
+        - "verifier - Programmatic verifier"
+        - "environment - Environment feedback"
+        - "human - Human supervision"
+        - "intrinsic - Intrinsic statistics"
+    validations:
+      required: true
+  - type: dropdown
+    id: recursion
+    attributes:
+      label: Recursion depth
+      description: "How many times does the output of the loop re-enter its own input, and does the loop get to change its own problem space?"
+      options:
+        - "single-pass - Single pass"
+        - "bootstrap - One bootstrap round"
+        - "iterated - Iterated rounds"
+        - "online - Continuous / online loop"
+        - "open-ended - Open-ended"
+    validations:
+      required: true
+  - type: dropdown
+    id: artifact
+    attributes:
+      label: Improved artefact
+      description: "What does the loop actually leave changed?"
+      multiple: true
+      options:
+        - "data - Dataset / corpus"
+        - "weights - Model weights"
+        - "prompt - Prompts & instructions"
+        - "scaffold - Agent scaffold / code"
+        - "tools - Tools & skills"
+        - "environment - Tasks & environments"
+        - "verifier - Verifier / reward model"
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      description: "Where is the loop demonstrated?"
+      multiple: true
+      options:
+        - "language - General language"
+        - "code - Code & software"
+        - "math - Mathematics & reasoning"
+        - "agent - Agents & embodiment"
+        - "multimodal - Multimodal"
+        - "science - Scientific discovery"
+        - "games - Games & control"
+        - "theory - Theory & domain-general"
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Contribution type
+      description: "What kind of artefact is the paper itself?"
+      options:
+        - "method - Method"
+        - "dataset - Dataset / model release"
+        - "benchmark - Benchmark"
+        - "analysis - Empirical or theoretical analysis"
+        - "survey - Survey"
+        - "toolkit - System / toolkit"
+        - "position - Position paper"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: "Which loop is running, and what re-enters the system that produced it?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: "I searched the list and this entry is not already in it."
+          required: true
+        - label: "The work describes a loop, not only a dataset or a model."
+          required: true
+        - label: "I am happy for this to be added under CC BY 4.0."
+          required: true

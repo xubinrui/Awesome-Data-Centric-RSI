@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/xubinrui/Awesome-Data-Centric-RSI/blob/main/CONTRIBUTING.md
+    about: How to add an entry, what the fields mean, and what each rule code means.
+  - name: Taxonomy reference
+    url: https://github.com/xubinrui/Awesome-Data-Centric-RSI/blob/main/docs/taxonomy.md
+    about: Every dimension and every vocabulary term, with inclusion guidance.
+  - name: Coverage gaps
+    url: https://github.com/xubinrui/Awesome-Data-Centric-RSI/blob/main/docs/stats.md#coverage-gaps
+    about: Vocabulary terms that no entry uses yet - the most useful contributions.

@@ -1,0 +1,31 @@
+id: constitutional-ai-2022
+title: "Constitutional AI: Harmlessness from AI Feedback"
+authors:
+  - Yuntao Bai
+  - Saurav Kadavath
+  - Sandipan Kundu
+  - Amanda Askell
+  - Jackson Kernion
+  - Andy Jones
+  - Anna Chen
+  - Anna Goldie
+  - Azalia Mirhoseini
+  - Cameron McKinnon
+  - et al.
+year: 2022
+venue: arXiv 2022
+venue_type: tech-report
+links:
+  arxiv: "2212.08073"
+tldr: >-
+  Replaces human harmlessness labels with a written constitution: the model
+  critiques and revises its own answers, then a preference model is trained on
+  those AI-authored comparisons.
+stage: [generation, verification, assimilation]
+signal: [self, peer-model]
+recursion: bootstrap
+artifact: [data, weights]
+domain: [language]
+contribution: method
+tags: [rlaif]
+added: "2026-09-21"

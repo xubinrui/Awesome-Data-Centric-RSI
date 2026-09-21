@@ -1,0 +1,25 @@
+id: star-2022
+title: "STaR: Bootstrapping Reasoning With Reasoning"
+authors:
+  - Eric Zelikman
+  - Yuhuai Wu
+  - Jesse Mu
+  - Noah D. Goodman
+year: 2022
+venue: NeurIPS 2022
+venue_type: conference
+links:
+  arxiv: "2203.14465"
+  code: https://github.com/ezelikman/STaR
+tldr: >-
+  Keeps only the self-generated rationales that reach the known answer,
+  fine-tunes on them and repeats, turning answer checking into a renewable
+  supply of reasoning traces.
+stage: [generation, assimilation]
+signal: [self, verifier]
+recursion: iterated
+artifact: [data, weights]
+domain: [language, math]
+contribution: method
+tags: [expert-iteration, reasoning-traces, rejection-sampling]
+added: "2026-09-21"

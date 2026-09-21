@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="547.2pt" height="403.2pt" viewBox="0 0 547.2 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403.2 
+L 547.2 403.2 
+L 547.2 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 114.912 379.008 
+L 497.952 379.008 
+L 497.952 112.896 
+L 114.912 112.896 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="142.668522" y="107.233891" transform="rotate(-0 142.668522 107.233891)">Self</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="198.181565" y="107.233891" transform="rotate(-0 198.181565 107.233891)">Peer model</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="253.694609" y="107.233891" transform="rotate(-0 253.694609 107.233891)">Verifier</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="309.207652" y="107.233891" transform="rotate(-0 309.207652 107.233891)">Environment</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="364.720696" y="107.233891" transform="rotate(-0 364.720696 107.233891)">Human</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="420.233739" y="107.233891" transform="rotate(-0 420.233739 107.233891)">Intrinsic</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 8.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #898781" x="306.432" y="92.395297" transform="rotate(-0 306.432 92.395297)">improvement signal</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7"/>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="149.236369" transform="rotate(-0 111.412 149.236369)">Generation</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8"/>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="176.670596" transform="rotate(-0 111.412 176.670596)">Curation</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_10">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="204.104823" transform="rotate(-0 111.412 204.104823)">Verification</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10"/>
+     <g id="text_11">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="231.539049" transform="rotate(-0 111.412 231.539049)">Assimilation</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11"/>
+     <g id="text_12">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="258.973276" transform="rotate(-0 111.412 258.973276)">Curriculum</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_12"/>
+     <g id="text_13">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="286.407151" transform="rotate(-0 111.412 286.407151)">Memory</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_13"/>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="313.84173" transform="rotate(-0 111.412 313.84173)">Scaffold</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_14"/>
+     <g id="text_15">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="341.275605" transform="rotate(-0 111.412 341.275605)">Measurement</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_15"/>
+     <g id="text_16">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #52514e" x="111.412" y="368.710183" transform="rotate(-0 111.412 368.710183)">Dynamics</text>
+     </g>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 8.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #898781" x="39.583602" y="245.952" transform="rotate(-90 39.583602 245.952)">loop stage</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 117.410087 158.299645 
+L 167.926957 158.299645 
+L 167.926957 133.334499 
+L 117.410087 133.334499 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #0d366b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 172.92313 158.299645 
+L 223.44 158.299645 
+L 223.44 133.334499 
+L 172.92313 133.334499 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 228.436174 158.299645 
+L 278.953043 158.299645 
+L 278.953043 133.334499 
+L 228.436174 133.334499 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #3987e5"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 283.949217 158.299645 
+L 334.466087 158.299645 
+L 334.466087 133.334499 
+L 283.949217 133.334499 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 394.975304 158.299645 
+L 445.492174 158.299645 
+L 445.492174 133.334499 
+L 394.975304 133.334499 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 117.410087 185.733872 
+L 167.926957 185.733872 
+L 167.926957 160.768726 
+L 117.410087 160.768726 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 394.975304 185.733872 
+L 445.492174 185.733872 
+L 445.492174 160.768726 
+L 394.975304 160.768726 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #0d366b"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 117.410087 213.168099 
+L 167.926957 213.168099 
+L 167.926957 188.202953 
+L 117.410087 188.202953 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 172.92313 213.168099 
+L 223.44 213.168099 
+L 223.44 188.202953 
+L 172.92313 188.202953 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #3987e5"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 339.462261 213.168099 
+L 389.97913 213.168099 
+L 389.97913 188.202953 
+L 339.462261 188.202953 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 117.410087 240.602326 
+L 167.926957 240.602326 
+L 167.926957 215.637179 
+L 117.410087 215.637179 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #1c5cab"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 172.92313 240.602326 
+L 223.44 240.602326 
+L 223.44 215.637179 
+L 172.92313 215.637179 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #3987e5"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 228.436174 240.602326 
+L 278.953043 240.602326 
+L 278.953043 215.637179 
+L 228.436174 215.637179 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #3987e5"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 283.949217 240.602326 
+L 334.466087 240.602326 
+L 334.466087 215.637179 
+L 283.949217 215.637179 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 339.462261 240.602326 
+L 389.97913 240.602326 
+L 389.97913 215.637179 
+L 339.462261 215.637179 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 117.410087 268.036553 
+L 167.926957 268.036553 
+L 167.926957 243.071406 
+L 117.410087 243.071406 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 228.436174 268.036553 
+L 278.953043 268.036553 
+L 278.953043 243.071406 
+L 228.436174 243.071406 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #3987e5"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 283.949217 268.036553 
+L 334.466087 268.036553 
+L 334.466087 243.071406 
+L 283.949217 243.071406 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #1c5cab"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 228.436174 295.470779 
+L 278.953043 295.470779 
+L 278.953043 270.505633 
+L 228.436174 270.505633 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 283.949217 295.470779 
+L 334.466087 295.470779 
+L 334.466087 270.505633 
+L 283.949217 270.505633 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 228.436174 322.905006 
+L 278.953043 322.905006 
+L 278.953043 297.93986 
+L 228.436174 297.93986 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 228.436174 350.339233 
+L 278.953043 350.339233 
+L 278.953043 325.374087 
+L 228.436174 325.374087 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 394.975304 377.77346 
+L 445.492174 377.77346 
+L 445.492174 352.808313 
+L 394.975304 352.808313 
+z
+" clip-path="url(#pa9980deb74)" style="fill: #86b6ef"/>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="142.668522" y="148.284846" transform="rotate(-0 142.668522 148.284846)">4</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="198.181565" y="148.284846" transform="rotate(-0 198.181565 148.284846)">1</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="253.694609" y="148.284846" transform="rotate(-0 253.694609 148.284846)">2</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="309.207652" y="148.284846" transform="rotate(-0 309.207652 148.284846)">1</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="364.720696" y="148.674494" transform="rotate(-0 364.720696 148.674494)">·</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="420.233739" y="148.284846" transform="rotate(-0 420.233739 148.284846)">1</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="142.668522" y="175.719072" transform="rotate(-0 142.668522 175.719072)">1</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="198.181565" y="176.108721" transform="rotate(-0 198.181565 176.108721)">·</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="253.694609" y="176.108721" transform="rotate(-0 253.694609 176.108721)">·</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="309.207652" y="176.108721" transform="rotate(-0 309.207652 176.108721)">·</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="364.720696" y="176.108721" transform="rotate(-0 364.720696 176.108721)">·</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="420.233739" y="175.719072" transform="rotate(-0 420.233739 175.719072)">4</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="142.668522" y="203.153299" transform="rotate(-0 142.668522 203.153299)">1</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="198.181565" y="203.153299" transform="rotate(-0 198.181565 203.153299)">2</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="253.694609" y="203.542948" transform="rotate(-0 253.694609 203.542948)">·</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="309.207652" y="203.542948" transform="rotate(-0 309.207652 203.542948)">·</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="364.720696" y="203.153299" transform="rotate(-0 364.720696 203.153299)">1</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="420.233739" y="203.542948" transform="rotate(-0 420.233739 203.542948)">·</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="142.668522" y="230.587526" transform="rotate(-0 142.668522 230.587526)">3</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="198.181565" y="230.587526" transform="rotate(-0 198.181565 230.587526)">2</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="253.694609" y="230.587526" transform="rotate(-0 253.694609 230.587526)">2</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="309.207652" y="230.587526" transform="rotate(-0 309.207652 230.587526)">1</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="364.720696" y="230.587526" transform="rotate(-0 364.720696 230.587526)">1</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="420.233739" y="230.977174" transform="rotate(-0 420.233739 230.977174)">·</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="142.668522" y="258.021753" transform="rotate(-0 142.668522 258.021753)">1</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="198.181565" y="258.411401" transform="rotate(-0 198.181565 258.411401)">·</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="253.694609" y="258.021753" transform="rotate(-0 253.694609 258.021753)">2</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="309.207652" y="258.021753" transform="rotate(-0 309.207652 258.021753)">3</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="364.720696" y="258.411401" transform="rotate(-0 364.720696 258.411401)">·</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="420.233739" y="258.411401" transform="rotate(-0 420.233739 258.411401)">·</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="142.668522" y="285.845628" transform="rotate(-0 142.668522 285.845628)">·</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="198.181565" y="285.845628" transform="rotate(-0 198.181565 285.845628)">·</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="253.694609" y="285.45598" transform="rotate(-0 253.694609 285.45598)">1</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="309.207652" y="285.45598" transform="rotate(-0 309.207652 285.45598)">1</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="364.720696" y="285.845628" transform="rotate(-0 364.720696 285.845628)">·</text>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="420.233739" y="285.845628" transform="rotate(-0 420.233739 285.845628)">·</text>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="142.668522" y="313.279855" transform="rotate(-0 142.668522 313.279855)">·</text>
+   </g>
+   <g id="text_55">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="198.181565" y="313.279855" transform="rotate(-0 198.181565 313.279855)">·</text>
+   </g>
+   <g id="text_56">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="253.694609" y="312.890206" transform="rotate(-0 253.694609 312.890206)">1</text>
+   </g>
+   <g id="text_57">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="309.207652" y="313.279855" transform="rotate(-0 309.207652 313.279855)">·</text>
+   </g>
+   <g id="text_58">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="364.720696" y="313.279855" transform="rotate(-0 364.720696 313.279855)">·</text>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="420.233739" y="313.279855" transform="rotate(-0 420.233739 313.279855)">·</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="142.668522" y="340.714082" transform="rotate(-0 142.668522 340.714082)">·</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="198.181565" y="340.714082" transform="rotate(-0 198.181565 340.714082)">·</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="253.694609" y="340.324433" transform="rotate(-0 253.694609 340.324433)">1</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="309.207652" y="340.714082" transform="rotate(-0 309.207652 340.714082)">·</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="364.720696" y="340.714082" transform="rotate(-0 364.720696 340.714082)">·</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="420.233739" y="340.714082" transform="rotate(-0 420.233739 340.714082)">·</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="142.668522" y="368.148308" transform="rotate(-0 142.668522 368.148308)">·</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="198.181565" y="368.148308" transform="rotate(-0 198.181565 368.148308)">·</text>
+   </g>
+   <g id="text_68">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="253.694609" y="368.148308" transform="rotate(-0 253.694609 368.148308)">·</text>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="309.207652" y="368.148308" transform="rotate(-0 309.207652 368.148308)">·</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 11px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #c3c2b7" x="364.720696" y="368.148308" transform="rotate(-0 364.720696 368.148308)">·</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #ffffff" x="420.233739" y="367.75866" transform="rotate(-0 420.233739 367.75866)">1</text>
+   </g>
+   <g id="text_72">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="148.284846" transform="rotate(-0 472.97113 148.284846)">9</text>
+   </g>
+   <g id="text_73">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="175.719072" transform="rotate(-0 472.97113 175.719072)">5</text>
+   </g>
+   <g id="text_74">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="203.153299" transform="rotate(-0 472.97113 203.153299)">4</text>
+   </g>
+   <g id="text_75">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="230.587526" transform="rotate(-0 472.97113 230.587526)">9</text>
+   </g>
+   <g id="text_76">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="258.021753" transform="rotate(-0 472.97113 258.021753)">6</text>
+   </g>
+   <g id="text_77">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="285.45598" transform="rotate(-0 472.97113 285.45598)">2</text>
+   </g>
+   <g id="text_78">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="312.890206" transform="rotate(-0 472.97113 312.890206)">1</text>
+   </g>
+   <g id="text_79">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="340.324433" transform="rotate(-0 472.97113 340.324433)">1</text>
+   </g>
+   <g id="text_80">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="472.97113" y="367.75866" transform="rotate(-0 472.97113 367.75866)">1</text>
+   </g>
+   <g id="text_81">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #898781" x="472.97113" y="124.83587" transform="rotate(-0 472.97113 124.83587)">Σ</text>
+   </g>
+  </g>
+  <g id="text_82">
+   <text style="font-weight: 600; font-size: 13.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="6.5664" y="24.369891" transform="rotate(-0 6.5664 24.369891)">What supplies the signal</text>
+  </g>
+  <g id="text_83">
+   <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #52514e" x="6.5664" y="45.522516" transform="rotate(-0 6.5664 45.522516)">Loop stage against the source of the signal that keeps or discards data.</text>
+  </g>
+  <g id="text_84">
+   <text style="font-size: 8px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #898781" x="6.5664" y="394.020525" transform="rotate(-0 6.5664 394.020525)">docs/stats.md#loop-stage-x-improvement-signal</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa9980deb74">
+   <rect x="114.912" y="112.896" width="383.04" height="266.112"/>
+  </clipPath>
+ </defs>
+</svg>

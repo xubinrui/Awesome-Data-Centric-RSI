@@ -1,0 +1,29 @@
+id: swe-bench-2023
+title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+authors:
+  - Carlos E. Jimenez
+  - John Yang
+  - Alexander Wettig
+  - Shunyu Yao
+  - Kexin Pei
+  - Ofir Press
+  - Karthik Narasimhan
+year: 2023
+venue: ICLR 2024
+venue_type: conference
+links:
+  arxiv: "2310.06770"
+  project: https://www.swebench.com
+  code: https://github.com/princeton-nlp/SWE-bench
+tldr: >-
+  Turns real GitHub issues and their merged fixes into an execution-verified
+  task suite, giving self-improving code loops a ground truth that is
+  expensive to game.
+stage: [measurement]
+signal: [verifier]
+recursion: single-pass
+artifact: [environment]
+domain: [code, agent]
+contribution: benchmark
+tags: []
+added: "2026-09-21"

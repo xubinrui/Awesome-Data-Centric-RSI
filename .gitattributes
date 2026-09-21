@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.svg linguist-generated=true
+data/derived/* linguist-generated=true
+README.md linguist-generated=true
+docs/*.md linguist-generated=true
+schema/*.json linguist-generated=true

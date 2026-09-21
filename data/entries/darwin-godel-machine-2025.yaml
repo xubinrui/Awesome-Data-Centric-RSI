@@ -1,0 +1,26 @@
+id: darwin-godel-machine-2025
+title: "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents"
+authors:
+  - Jenny Zhang
+  - Shengran Hu
+  - Cong Lu
+  - Robert Lange
+  - Jeff Clune
+year: 2025
+venue: arXiv 2025
+venue_type: preprint
+links:
+  arxiv: "2505.22954"
+  code: https://github.com/jennyzzt/dgm
+tldr: >-
+  Keeps an archive of coding agents that rewrite their own source and
+  validates each variant empirically on benchmarks instead of proving it
+  better, branching from whatever survives.
+stage: [scaffold, curriculum]
+signal: [verifier]
+recursion: open-ended
+artifact: [scaffold, tools]
+domain: [code, agent]
+contribution: method
+tags: [evolution, open-endedness]
+added: "2026-09-21"

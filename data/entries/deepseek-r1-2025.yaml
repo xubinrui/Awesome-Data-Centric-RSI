@@ -1,0 +1,22 @@
+id: deepseek-r1-2025
+title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+authors:
+  - DeepSeek-AI
+year: 2025
+venue: arXiv 2025
+venue_type: preprint
+links:
+  arxiv: "2501.12948"
+  code: https://github.com/deepseek-ai/DeepSeek-R1
+tldr: >-
+  Trains long reasoning with rule-based correctness rewards, then recycles the
+  best sampled traces into supervised data for the next round - a
+  verifier-driven loop with no learned reward model.
+stage: [assimilation, generation]
+signal: [verifier]
+recursion: iterated
+artifact: [data, weights]
+domain: [language, code, math]
+contribution: method
+tags: [reasoning-traces, rejection-sampling, test-time-compute]
+added: "2026-09-21"

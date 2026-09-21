@@ -1,0 +1,53 @@
+name: Taxonomy change
+description: Add, retire or redefine a vocabulary term
+title: "[taxonomy] <axis>: <term>"
+labels: [taxonomy]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Vocabulary changes re-label work that is already merged, so they are
+        discussed before any pull request. Keys are permanent once merged; a
+        label can be reworded, a key cannot be renamed.
+  - type: dropdown
+    id: axis
+    attributes:
+      label: Which dimension
+      options:
+        - stage
+        - signal
+        - recursion
+        - artifact
+        - domain
+        - contribution
+        - tags
+        - venue_types
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: Kind of change
+      options:
+        - Add a term
+        - Retire a term
+        - Redefine an existing term
+        - Reword a label
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why the current vocabulary cannot express this
+      description: >-
+        Name at least two existing or proposed entries that need the distinction.
+        A dimension earns a term when entries are being mislabelled without it.
+    validations:
+      required: true
+  - type: textarea
+    id: migration
+    attributes:
+      label: Which entries would move
+      description: List the entry ids that would be re-labelled by this change.
+    validations:
+      required: true

@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: check (python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install pinned tooling
+        run: python -m pip install -r requirements.txt
+
+      - name: Canonical formatting
+        run: python scripts/format.py --check
+
+      - name: Rules
+        run: python scripts/validate.py --no-color
+
+      - name: Tests
+        run: python -m pytest
+
+      # SVG bytes are only comparable on the pinned matplotlib, which the
+      # canonical job installs; the others still prove the text output matches.
+      - name: Generated files are in sync
+        if: matrix.python != '3.12'
+        run: python scripts/build.py --check --no-figures
+
+      - name: Generated files are in sync (including figures)
+        if: matrix.python == '3.12'
+        run: python scripts/build.py --check

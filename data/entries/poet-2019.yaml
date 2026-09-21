@@ -1,0 +1,24 @@
+id: poet-2019
+title: "Paired Open-Ended Trailblazer (POET): Endlessly Generating Increasingly Complex and Diverse Learning Environments and Their Solutions"
+authors:
+  - Rui Wang
+  - Joel Lehman
+  - Jeff Clune
+  - Kenneth O. Stanley
+year: 2019
+venue: arXiv 2019
+venue_type: preprint
+links:
+  arxiv: "1901.01753"
+tldr: >-
+  Co-evolves a population of agents together with the obstacle courses that
+  challenge them, transferring solutions between niches so the task
+  distribution keeps outrunning the solvers.
+stage: [curriculum]
+signal: [environment]
+recursion: open-ended
+artifact: [weights, environment]
+domain: [games]
+contribution: method
+tags: [classic, evolution, open-endedness]
+added: "2026-09-21"

@@ -1,0 +1,779 @@
+{
+  "generated": "2026-09-21",
+  "entries": 14,
+  "years": {
+    "min": 2017,
+    "max": 2025
+  },
+  "counts": {
+    "stage": {
+      "generation": 5,
+      "curation": 4,
+      "verification": 2,
+      "assimilation": 5,
+      "curriculum": 4,
+      "memory": 1,
+      "scaffold": 1,
+      "measurement": 1,
+      "dynamics": 1
+    },
+    "signal": {
+      "self": 4,
+      "peer-model": 2,
+      "verifier": 5,
+      "environment": 3,
+      "human": 1,
+      "intrinsic": 5
+    },
+    "recursion": {
+      "single-pass": 5,
+      "bootstrap": 2,
+      "iterated": 3,
+      "online": 1,
+      "open-ended": 3
+    },
+    "artifact": {
+      "data": 10,
+      "weights": 6,
+      "prompt": 1,
+      "scaffold": 1,
+      "tools": 2,
+      "environment": 2,
+      "verifier": 1
+    },
+    "domain": {
+      "language": 8,
+      "code": 4,
+      "math": 3,
+      "agent": 3,
+      "multimodal": 1,
+      "science": 0,
+      "games": 3,
+      "theory": 1
+    },
+    "contribution": {
+      "method": 10,
+      "dataset": 0,
+      "benchmark": 1,
+      "analysis": 1,
+      "survey": 1,
+      "toolkit": 1,
+      "position": 0
+    },
+    "primary_stage": {
+      "generation": 4,
+      "curation": 3,
+      "verification": 1,
+      "assimilation": 1,
+      "curriculum": 1,
+      "memory": 1,
+      "scaffold": 1,
+      "measurement": 1,
+      "dynamics": 1
+    },
+    "venue_type": {
+      "conference": 5,
+      "journal": 2,
+      "workshop": 0,
+      "preprint": 6,
+      "tech-report": 1,
+      "blog": 0,
+      "thesis": 0
+    },
+    "year": {
+      "2017": 1,
+      "2018": 0,
+      "2019": 1,
+      "2020": 0,
+      "2021": 0,
+      "2022": 3,
+      "2023": 6,
+      "2024": 1,
+      "2025": 2
+    },
+    "tags": {
+      "agent-memory": 1,
+      "classic": 2,
+      "data-mixing": 3,
+      "deduplication": 2,
+      "distillation": 0,
+      "diversity": 1,
+      "evolution": 2,
+      "expert-iteration": 2,
+      "instruction-tuning": 1,
+      "model-collapse": 1,
+      "open-endedness": 3,
+      "process-reward": 1,
+      "reasoning-traces": 2,
+      "rejection-sampling": 3,
+      "reward-hacking": 0,
+      "rlaif": 1,
+      "scaling-laws": 0,
+      "self-play": 1,
+      "test-time-compute": 1,
+      "theorem-proving": 0,
+      "weak-to-strong": 0
+    }
+  },
+  "cumulative_by_year": {
+    "2017": 1,
+    "2018": 1,
+    "2019": 2,
+    "2020": 2,
+    "2021": 2,
+    "2022": 5,
+    "2023": 11,
+    "2024": 12,
+    "2025": 14
+  },
+  "tables": {
+    "stage_x_year": {
+      "row_axis": "stage",
+      "col_axis": "year",
+      "rows": [
+        "generation",
+        "curation",
+        "verification",
+        "assimilation",
+        "curriculum",
+        "memory",
+        "scaffold",
+        "measurement",
+        "dynamics"
+      ],
+      "cols": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "stage_x_signal": {
+      "row_axis": "stage",
+      "col_axis": "signal",
+      "rows": [
+        "generation",
+        "curation",
+        "verification",
+        "assimilation",
+        "curriculum",
+        "memory",
+        "scaffold",
+        "measurement",
+        "dynamics"
+      ],
+      "cols": [
+        "self",
+        "peer-model",
+        "verifier",
+        "environment",
+        "human",
+        "intrinsic"
+      ],
+      "matrix": [
+        [
+          4,
+          1,
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "domain_x_artifact": {
+      "row_axis": "domain",
+      "col_axis": "artifact",
+      "rows": [
+        "language",
+        "code",
+        "math",
+        "agent",
+        "multimodal",
+        "science",
+        "games",
+        "theory"
+      ],
+      "cols": [
+        "data",
+        "weights",
+        "prompt",
+        "scaffold",
+        "tools",
+        "environment",
+        "verifier"
+      ],
+      "matrix": [
+        [
+          8,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "year_x_recursion": {
+      "row_axis": "year",
+      "col_axis": "recursion",
+      "rows": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "cols": [
+        "single-pass",
+        "bootstrap",
+        "iterated",
+        "online",
+        "open-ended"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    "stage_x_contribution": {
+      "row_axis": "stage",
+      "col_axis": "contribution",
+      "rows": [
+        "generation",
+        "curation",
+        "verification",
+        "assimilation",
+        "curriculum",
+        "memory",
+        "scaffold",
+        "measurement",
+        "dynamics"
+      ],
+      "cols": [
+        "method",
+        "dataset",
+        "benchmark",
+        "analysis",
+        "survey",
+        "toolkit",
+        "position"
+      ],
+      "matrix": [
+        [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "stage_x_stage": {
+      "row_axis": "stage",
+      "col_axis": "stage",
+      "rows": [
+        "generation",
+        "curation",
+        "verification",
+        "assimilation",
+        "curriculum",
+        "memory",
+        "scaffold",
+        "measurement",
+        "dynamics"
+      ],
+      "cols": [
+        "generation",
+        "curation",
+        "verification",
+        "assimilation",
+        "curriculum",
+        "memory",
+        "scaffold",
+        "measurement",
+        "dynamics"
+      ],
+      "matrix": [
+        [
+          5,
+          1,
+          1,
+          4,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          2,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "coverage_gaps": [
+    "domain:science",
+    "contribution:dataset",
+    "contribution:position"
+  ],
+  "taxonomy_version": 1
+}

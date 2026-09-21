@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="547.2pt" height="388.8pt" viewBox="0 0 547.2 388.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 388.8 
+L 547.2 388.8 
+L 547.2 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30.096 157.464 
+L 172.368 157.464 
+L 172.368 108.864 
+L 30.096 108.864 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 36.9132 157.464 
+L 36.9132 146.124 
+Q 36.9132 143.964 39.0732 143.964 
+L 44.8308 143.964 
+Q 46.9908 143.964 46.9908 146.124 
+L 46.9908 157.464 
+z
+" clip-path="url(#pa79de2ea46)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 111.0132 157.464 
+L 111.0132 119.124 
+Q 111.0132 116.964 113.1732 116.964 
+L 118.9308 116.964 
+Q 121.0908 116.964 121.0908 119.124 
+L 121.0908 157.464 
+z
+" clip-path="url(#pa79de2ea46)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 155.4732 157.464 
+L 155.4732 146.124 
+Q 155.4732 143.964 157.6332 143.964 
+L 163.3908 143.964 
+Q 165.5508 143.964 165.5508 146.124 
+L 165.5508 157.464 
+z
+" clip-path="url(#pa79de2ea46)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="30.096" y="99.558516" transform="rotate(-0 30.096 99.558516)">Generation</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="172.368" y="99.177891" transform="rotate(-0 172.368 99.177891)">5</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_6">
+    <path d="M 206.8416 157.464 
+L 349.1136 157.464 
+L 349.1136 108.864 
+L 206.8416 108.864 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4"/>
+   <g id="patch_7">
+    <path d="M 287.7588 157.464 
+L 287.7588 146.124 
+Q 287.7588 143.964 289.9188 143.964 
+L 295.6764 143.964 
+Q 297.8364 143.964 297.8364 146.124 
+L 297.8364 157.464 
+z
+" clip-path="url(#p880eda1a92)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 302.5788 157.464 
+L 302.5788 132.624 
+Q 302.5788 130.464 304.7388 130.464 
+L 310.4964 130.464 
+Q 312.6564 130.464 312.6564 132.624 
+L 312.6564 157.464 
+z
+" clip-path="url(#p880eda1a92)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 317.3988 157.464 
+L 317.3988 146.124 
+Q 317.3988 143.964 319.5588 143.964 
+L 325.3164 143.964 
+Q 327.4764 143.964 327.4764 146.124 
+L 327.4764 157.464 
+z
+" clip-path="url(#p880eda1a92)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="206.8416" y="99.558516" transform="rotate(-0 206.8416 99.558516)">Curation</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="349.1136" y="99.177891" transform="rotate(-0 349.1136 99.177891)">4</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_10">
+    <path d="M 383.5872 157.464 
+L 525.8592 157.464 
+L 525.8592 108.864 
+L 383.5872 108.864 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6"/>
+   <g id="patch_11">
+    <path d="M 464.5044 157.464 
+L 464.5044 146.124 
+Q 464.5044 143.964 466.6644 143.964 
+L 472.422 143.964 
+Q 474.582 143.964 474.582 146.124 
+L 474.582 157.464 
+z
+" clip-path="url(#p4537f2496a)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 479.3244 157.464 
+L 479.3244 146.124 
+Q 479.3244 143.964 481.4844 143.964 
+L 487.242 143.964 
+Q 489.402 143.964 489.402 146.124 
+L 489.402 157.464 
+z
+" clip-path="url(#p4537f2496a)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="383.5872" y="99.558516" transform="rotate(-0 383.5872 99.558516)">Verification</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="525.8592" y="99.177891" transform="rotate(-0 525.8592 99.177891)">2</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_13">
+    <path d="M 30.096 248.832 
+L 172.368 248.832 
+L 172.368 200.232 
+L 30.096 200.232 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_7"/>
+   <g id="matplotlib.axis_8"/>
+   <g id="patch_14">
+    <path d="M 36.9132 248.832 
+L 36.9132 237.492 
+Q 36.9132 235.332 39.0732 235.332 
+L 44.8308 235.332 
+Q 46.9908 235.332 46.9908 237.492 
+L 46.9908 248.832 
+z
+" clip-path="url(#p35f062003d)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 111.0132 248.832 
+L 111.0132 223.992 
+Q 111.0132 221.832 113.1732 221.832 
+L 118.9308 221.832 
+Q 121.0908 221.832 121.0908 223.992 
+L 121.0908 248.832 
+z
+" clip-path="url(#p35f062003d)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 125.8332 248.832 
+L 125.8332 237.492 
+Q 125.8332 235.332 127.9932 235.332 
+L 133.7508 235.332 
+Q 135.9108 235.332 135.9108 237.492 
+L 135.9108 248.832 
+z
+" clip-path="url(#p35f062003d)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 155.4732 248.832 
+L 155.4732 237.492 
+Q 155.4732 235.332 157.6332 235.332 
+L 163.3908 235.332 
+Q 165.5508 235.332 165.5508 237.492 
+L 165.5508 248.832 
+z
+" clip-path="url(#p35f062003d)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="30.096" y="190.926516" transform="rotate(-0 30.096 190.926516)">Assimilation</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="172.368" y="190.545891" transform="rotate(-0 172.368 190.545891)">5</text>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g id="patch_18">
+    <path d="M 206.8416 248.832 
+L 349.1136 248.832 
+L 349.1136 200.232 
+L 206.8416 200.232 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_9"/>
+   <g id="matplotlib.axis_10"/>
+   <g id="patch_19">
+    <path d="M 213.6588 248.832 
+L 213.6588 237.492 
+Q 213.6588 235.332 215.8188 235.332 
+L 221.5764 235.332 
+Q 223.7364 235.332 223.7364 237.492 
+L 223.7364 248.832 
+z
+" clip-path="url(#p1ed299b0f5)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 243.2988 248.832 
+L 243.2988 237.492 
+Q 243.2988 235.332 245.4588 235.332 
+L 251.2164 235.332 
+Q 253.3764 235.332 253.3764 237.492 
+L 253.3764 248.832 
+z
+" clip-path="url(#p1ed299b0f5)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 302.5788 248.832 
+L 302.5788 237.492 
+Q 302.5788 235.332 304.7388 235.332 
+L 310.4964 235.332 
+Q 312.6564 235.332 312.6564 237.492 
+L 312.6564 248.832 
+z
+" clip-path="url(#p1ed299b0f5)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 332.2188 248.832 
+L 332.2188 237.492 
+Q 332.2188 235.332 334.3788 235.332 
+L 340.1364 235.332 
+Q 342.2964 235.332 342.2964 237.492 
+L 342.2964 248.832 
+z
+" clip-path="url(#p1ed299b0f5)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="206.8416" y="190.926516" transform="rotate(-0 206.8416 190.926516)">Curriculum</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="349.1136" y="190.545891" transform="rotate(-0 349.1136 190.545891)">4</text>
+   </g>
+  </g>
+  <g id="axes_6">
+   <g id="patch_23">
+    <path d="M 383.5872 248.832 
+L 525.8592 248.832 
+L 525.8592 200.232 
+L 383.5872 200.232 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_11"/>
+   <g id="matplotlib.axis_12"/>
+   <g id="patch_24">
+    <path d="M 479.3244 248.832 
+L 479.3244 237.492 
+Q 479.3244 235.332 481.4844 235.332 
+L 487.242 235.332 
+Q 489.402 235.332 489.402 237.492 
+L 489.402 248.832 
+z
+" clip-path="url(#p05c488427b)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="383.5872" y="190.925773" transform="rotate(-0 383.5872 190.925773)">Memory</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="525.8592" y="190.545891" transform="rotate(-0 525.8592 190.545891)">1</text>
+   </g>
+  </g>
+  <g id="axes_7">
+   <g id="patch_25">
+    <path d="M 30.096 340.2 
+L 172.368 340.2 
+L 172.368 291.6 
+L 30.096 291.6 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_13">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_13">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="41.952" y="350.537891" transform="rotate(-0 41.952 350.537891)">2017</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="160.512" y="350.537891" transform="rotate(-0 160.512 350.537891)">2025</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_14"/>
+   <g id="patch_26">
+    <path d="M 155.4732 340.2 
+L 155.4732 328.86 
+Q 155.4732 326.7 157.6332 326.7 
+L 163.3908 326.7 
+Q 165.5508 326.7 165.5508 328.86 
+L 165.5508 340.2 
+z
+" clip-path="url(#p03edee31d6)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="30.096" y="282.294516" transform="rotate(-0 30.096 282.294516)">Scaffold</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="172.368" y="281.913891" transform="rotate(-0 172.368 281.913891)">1</text>
+   </g>
+  </g>
+  <g id="axes_8">
+   <g id="patch_27">
+    <path d="M 206.8416 340.2 
+L 349.1136 340.2 
+L 349.1136 291.6 
+L 206.8416 291.6 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_15">
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_17">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="218.6976" y="350.537891" transform="rotate(-0 218.6976 350.537891)">2017</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_18">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="337.2576" y="350.537891" transform="rotate(-0 337.2576 350.537891)">2025</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_16"/>
+   <g id="patch_28">
+    <path d="M 302.5788 340.2 
+L 302.5788 328.86 
+Q 302.5788 326.7 304.7388 326.7 
+L 310.4964 326.7 
+Q 312.6564 326.7 312.6564 328.86 
+L 312.6564 340.2 
+z
+" clip-path="url(#p4494cd045f)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="206.8416" y="282.293773" transform="rotate(-0 206.8416 282.293773)">Measurement</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="349.1136" y="281.913891" transform="rotate(-0 349.1136 281.913891)">1</text>
+   </g>
+  </g>
+  <g id="axes_9">
+   <g id="patch_29">
+    <path d="M 383.5872 340.2 
+L 525.8592 340.2 
+L 525.8592 291.6 
+L 383.5872 291.6 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="matplotlib.axis_17">
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_21">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="395.4432" y="350.537891" transform="rotate(-0 395.4432 350.537891)">2017</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6"/>
+     <g id="text_22">
+      <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: middle; fill: #52514e" x="514.0032" y="350.537891" transform="rotate(-0 514.0032 350.537891)">2025</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_18"/>
+   <g id="patch_30">
+    <path d="M 479.3244 340.2 
+L 479.3244 328.86 
+Q 479.3244 326.7 481.4844 326.7 
+L 487.242 326.7 
+Q 489.402 326.7 489.402 328.86 
+L 489.402 340.2 
+z
+" clip-path="url(#p47bd660f5c)" style="fill: #2a78d6"/>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 600; font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="383.5872" y="282.294516" transform="rotate(-0 383.5872 282.294516)">Dynamics</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: end; fill: #898781" x="525.8592" y="281.913891" transform="rotate(-0 525.8592 281.913891)">1</text>
+   </g>
+  </g>
+  <g id="text_25">
+   <text style="font-weight: 600; font-size: 13.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #0b0b0b" x="6.5664" y="23.865891" transform="rotate(-0 6.5664 23.865891)">Each stage on the same scale</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 9.5px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #52514e" x="6.5664" y="44.154516" transform="rotate(-0 6.5664 44.154516)">Entries per year, one panel per loop stage; every panel shares a 0-3 axis.</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 8px; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; text-anchor: start; fill: #898781" x="6.5664" y="379.879725" transform="rotate(-0 6.5664 379.879725)">docs/stats.md#loop-stage-x-year</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa79de2ea46">
+   <rect x="30.096" y="108.864" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p880eda1a92">
+   <rect x="206.8416" y="108.864" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p4537f2496a">
+   <rect x="383.5872" y="108.864" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p35f062003d">
+   <rect x="30.096" y="200.232" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p1ed299b0f5">
+   <rect x="206.8416" y="200.232" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p05c488427b">
+   <rect x="383.5872" y="200.232" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p03edee31d6">
+   <rect x="30.096" y="291.6" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p4494cd045f">
+   <rect x="206.8416" y="291.6" width="142.272" height="48.6"/>
+  </clipPath>
+  <clipPath id="p47bd660f5c">
+   <rect x="383.5872" y="291.6" width="142.272" height="48.6"/>
+  </clipPath>
+ </defs>
+</svg>

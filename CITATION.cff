@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: Awesome Data-Centric Recursive Self-Improvement
+message: >-
+  If you use this list or its machine-readable exports, please cite it.
+type: dataset
+abstract: >-
+  A curated, machine-checked survey of systems that improve themselves by
+  improving their own data, labelled along six dimensions: loop stage,
+  improvement signal, recursion depth, improved artefact, domain and
+  contribution type.
+authors:
+  - name: Awesome Data-Centric RSI contributors
+repository-code: https://github.com/xubinrui/Awesome-Data-Centric-RSI
+license: CC-BY-4.0
+keywords:
+  - recursive self-improvement
+  - data-centric AI
+  - synthetic data
+  - self-training
+  - open-endedness

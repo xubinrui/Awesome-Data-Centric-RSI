@@ -1,0 +1,290 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xubinrui/Awesome-Data-Centric-RSI/schema/entry.schema.json",
+  "title": "Awesome Data-Centric RSI entry",
+  "$comment": "GENERATED from data/taxonomy.yaml by scripts/build.py - do not edit by hand.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "authors",
+    "year",
+    "venue",
+    "venue_type",
+    "links",
+    "tldr",
+    "stage",
+    "signal",
+    "recursion",
+    "artifact",
+    "domain",
+    "contribution",
+    "added"
+  ],
+  "properties": {
+    "id": {
+      "description": "Slug plus first-publication year; must equal the filename stem.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*-(19|20)\\d{2}$",
+      "minLength": 6,
+      "maxLength": 70
+    },
+    "title": {
+      "description": "Title as published, without a trailing period.",
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 200,
+      "pattern": "^\\S.*[^.\\s]$"
+    },
+    "authors": {
+      "description": "Authors in published order. For long author lists, give the first ten and close with the literal element 'et al.'.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[^,;]+$",
+        "minLength": 2
+      },
+      "minItems": 1,
+      "maxItems": 11
+    },
+    "year": {
+      "description": "Year the work first became public (arXiv v1 date if preprinted).",
+      "type": "integer",
+      "minimum": 1950,
+      "maximum": 2100
+    },
+    "venue": {
+      "description": "Human-readable venue ending in its year, e.g. 'NeurIPS 2023'.",
+      "type": "string",
+      "pattern": "^\\S.*(19|20)\\d{2}$",
+      "maxLength": 80
+    },
+    "venue_type": {
+      "type": "string",
+      "enum": [
+        "conference",
+        "journal",
+        "workshop",
+        "preprint",
+        "tech-report",
+        "blog",
+        "thesis"
+      ]
+    },
+    "links": {
+      "description": "At least one of arxiv / doi / paper.",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "arxiv": {
+          "type": "string",
+          "pattern": "^(\\d{4}\\.\\d{4,5}|[a-z-]+(\\.[A-Z]{2})?/\\d{7})$"
+        },
+        "doi": {
+          "type": "string",
+          "pattern": "^10\\.\\d{4,9}/\\S+$"
+        },
+        "paper": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        },
+        "openreview": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        },
+        "project": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        },
+        "dataset": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        },
+        "model": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        },
+        "blog": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        },
+        "video": {
+          "type": "string",
+          "pattern": "^https://[^\\s\\\"<>]+$"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "arxiv"
+          ]
+        },
+        {
+          "required": [
+            "doi"
+          ]
+        },
+        {
+          "required": [
+            "paper"
+          ]
+        }
+      ]
+    },
+    "tldr": {
+      "description": "One sentence on what the work does for the loop, ending in a period.",
+      "type": "string",
+      "minLength": 60,
+      "maxLength": 300,
+      "pattern": "^[A-Z0-9][^\\n]*\\.$"
+    },
+    "stage": {
+      "description": "Which turn of the data flywheel does this work act on? The first value decides which README section the entry is filed under.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "generation",
+          "curation",
+          "verification",
+          "assimilation",
+          "curriculum",
+          "memory",
+          "scaffold",
+          "measurement",
+          "dynamics"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 9,
+      "uniqueItems": true
+    },
+    "signal": {
+      "description": "Where does the signal that separates good data from bad data come from?",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "self",
+          "peer-model",
+          "verifier",
+          "environment",
+          "human",
+          "intrinsic"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 6,
+      "uniqueItems": true
+    },
+    "recursion": {
+      "description": "How many times does the output of the loop re-enter its own input, and does the loop get to change its own problem space?",
+      "type": "string",
+      "enum": [
+        "single-pass",
+        "bootstrap",
+        "iterated",
+        "online",
+        "open-ended"
+      ]
+    },
+    "artifact": {
+      "description": "What does the loop actually leave changed?",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "data",
+          "weights",
+          "prompt",
+          "scaffold",
+          "tools",
+          "environment",
+          "verifier"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 7,
+      "uniqueItems": true
+    },
+    "domain": {
+      "description": "Where is the loop demonstrated?",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "language",
+          "code",
+          "math",
+          "agent",
+          "multimodal",
+          "science",
+          "games",
+          "theory"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 8,
+      "uniqueItems": true
+    },
+    "contribution": {
+      "description": "What kind of artefact is the paper itself?",
+      "type": "string",
+      "enum": [
+        "method",
+        "dataset",
+        "benchmark",
+        "analysis",
+        "survey",
+        "toolkit",
+        "position"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "agent-memory",
+          "classic",
+          "data-mixing",
+          "deduplication",
+          "distillation",
+          "diversity",
+          "evolution",
+          "expert-iteration",
+          "instruction-tuning",
+          "model-collapse",
+          "open-endedness",
+          "process-reward",
+          "reasoning-traces",
+          "rejection-sampling",
+          "reward-hacking",
+          "rlaif",
+          "scaling-laws",
+          "self-play",
+          "test-time-compute",
+          "theorem-proving",
+          "weak-to-strong"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "description": "Optional editorial note; plain text, no Markdown links.",
+      "type": "string",
+      "maxLength": 600
+    },
+    "added": {
+      "description": "ISO date the entry was added to this list.",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  }
+}

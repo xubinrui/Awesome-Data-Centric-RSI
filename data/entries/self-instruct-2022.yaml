@@ -1,0 +1,28 @@
+id: self-instruct-2022
+title: "Self-Instruct: Aligning Language Models with Self-Generated Instructions"
+authors:
+  - Yizhong Wang
+  - Yeganeh Kordi
+  - Swaroop Mishra
+  - Alisa Liu
+  - Noah A. Smith
+  - Daniel Khashabi
+  - Hannaneh Hajishirzi
+year: 2022
+venue: ACL 2023
+venue_type: conference
+links:
+  arxiv: "2212.10560"
+  code: https://github.com/yizhongw/self-instruct
+tldr: >-
+  Bootstraps an instruction-tuning corpus out of a base model itself, sampling
+  new tasks from a small human seed pool and filtering near-duplicates before
+  fine-tuning on what survives.
+stage: [generation, curation]
+signal: [self, intrinsic]
+recursion: bootstrap
+artifact: [data, weights]
+domain: [language]
+contribution: method
+tags: [instruction-tuning, rejection-sampling]
+added: "2026-09-21"

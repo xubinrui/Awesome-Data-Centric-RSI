@@ -1,0 +1,50 @@
+name: Links
+
+# Network checks live here rather than in CI: a contributor should never be
+# blocked because somebody else's server is down, but a dead link still gets
+# caught - on the entries a pull request touches, and weekly across the list.
+
+on:
+  pull_request:
+    paths:
+      - "data/entries/**"
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: python -m pip install -r requirements.txt
+
+      - name: Entries touched by this pull request
+        if: github.event_name == 'pull_request'
+        id: changed
+        run: |
+          git fetch --no-tags --depth=1 origin "${{ github.base_ref }}"
+          files=$(git diff --name-only --diff-filter=d \
+            "origin/${{ github.base_ref }}...HEAD" -- 'data/entries/*.yaml' | tr '\n' ' ')
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+          echo "changed: ${files:-none}"
+
+      - name: Check links and arXiv metadata for changed entries
+        if: github.event_name == 'pull_request' && steps.changed.outputs.files != ''
+        run: python scripts/check_links.py --metadata ${{ steps.changed.outputs.files }}
+
+      - name: Check every link in the list
+        if: github.event_name != 'pull_request'
+        run: python scripts/check_links.py --metadata

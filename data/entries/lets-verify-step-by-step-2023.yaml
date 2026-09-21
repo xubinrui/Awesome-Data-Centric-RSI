@@ -1,0 +1,31 @@
+id: lets-verify-step-by-step-2023
+title: Let's Verify Step by Step
+authors:
+  - Hunter Lightman
+  - Vineet Kosaraju
+  - Yura Burda
+  - Harri Edwards
+  - Bowen Baker
+  - Teddy Lee
+  - Jan Leike
+  - John Schulman
+  - Ilya Sutskever
+  - Karl Cobbe
+year: 2023
+venue: ICLR 2024
+venue_type: conference
+links:
+  arxiv: "2305.20050"
+  dataset: https://github.com/openai/prm800k
+tldr: >-
+  Compares outcome against process supervision on math and finds step-level
+  reward models, trained on 800K human step labels, pick correct solutions far
+  more reliably.
+stage: [verification, assimilation]
+signal: [peer-model, human]
+recursion: single-pass
+artifact: [data, verifier]
+domain: [math]
+contribution: method
+tags: [process-reward]
+added: "2026-09-21"

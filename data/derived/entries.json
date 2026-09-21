@@ -1,0 +1,627 @@
+{
+  "generated": "2026-09-21",
+  "taxonomy_version": 1,
+  "count": 14,
+  "entries": [
+    {
+      "id": "darwin-godel-machine-2025",
+      "title": "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents",
+      "authors": [
+        "Jenny Zhang",
+        "Shengran Hu",
+        "Cong Lu",
+        "Robert Lange",
+        "Jeff Clune"
+      ],
+      "year": 2025,
+      "venue": "arXiv 2025",
+      "venue_type": "preprint",
+      "links": {
+        "arxiv": "2505.22954",
+        "code": "https://github.com/jennyzzt/dgm"
+      },
+      "tldr": "Keeps an archive of coding agents that rewrite their own source and validates each variant empirically on benchmarks instead of proving it better, branching from whatever survives.",
+      "stage": [
+        "scaffold",
+        "curriculum"
+      ],
+      "signal": [
+        "verifier"
+      ],
+      "recursion": "open-ended",
+      "artifact": [
+        "scaffold",
+        "tools"
+      ],
+      "domain": [
+        "code",
+        "agent"
+      ],
+      "contribution": "method",
+      "tags": [
+        "evolution",
+        "open-endedness"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2505.22954",
+      "primary_stage": "scaffold"
+    },
+    {
+      "id": "deepseek-r1-2025",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "authors": [
+        "DeepSeek-AI"
+      ],
+      "year": 2025,
+      "venue": "arXiv 2025",
+      "venue_type": "preprint",
+      "links": {
+        "arxiv": "2501.12948",
+        "code": "https://github.com/deepseek-ai/DeepSeek-R1"
+      },
+      "tldr": "Trains long reasoning with rule-based correctness rewards, then recycles the best sampled traces into supervised data for the next round - a verifier-driven loop with no learned reward model.",
+      "stage": [
+        "assimilation",
+        "generation"
+      ],
+      "signal": [
+        "verifier"
+      ],
+      "recursion": "iterated",
+      "artifact": [
+        "data",
+        "weights"
+      ],
+      "domain": [
+        "language",
+        "code",
+        "math"
+      ],
+      "contribution": "method",
+      "tags": [
+        "reasoning-traces",
+        "rejection-sampling",
+        "test-time-compute"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2501.12948",
+      "primary_stage": "assimilation"
+    },
+    {
+      "id": "data-selection-survey-2024",
+      "title": "A Survey on Data Selection for Language Models",
+      "authors": [
+        "Alon Albalak",
+        "Yanai Elazar",
+        "Sang Michael Xie",
+        "Shayne Longpre",
+        "Nathan Lambert",
+        "Xinyi Wang",
+        "Niklas Muennighoff",
+        "Bairu Hou",
+        "Liangming Pan",
+        "Haewon Jeong",
+        "et al."
+      ],
+      "year": 2024,
+      "venue": "arXiv 2024",
+      "venue_type": "preprint",
+      "links": {
+        "arxiv": "2402.16827",
+        "code": "https://github.com/alon-albalak/data-selection-survey"
+      },
+      "tldr": "Organises data selection for language models into one pipeline vocabulary, covering filtering, deduplication, mixing and selection objectives across pretraining and fine-tuning.",
+      "stage": [
+        "curation"
+      ],
+      "signal": [
+        "intrinsic"
+      ],
+      "recursion": "single-pass",
+      "artifact": [
+        "data"
+      ],
+      "domain": [
+        "language"
+      ],
+      "contribution": "survey",
+      "tags": [
+        "data-mixing",
+        "deduplication"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2402.16827",
+      "primary_stage": "curation"
+    },
+    {
+      "id": "dsir-2023",
+      "title": "Data Selection for Language Models via Importance Resampling",
+      "authors": [
+        "Sang Michael Xie",
+        "Shibani Santurkar",
+        "Tengyu Ma",
+        "Percy Liang"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "venue_type": "conference",
+      "links": {
+        "arxiv": "2302.03169",
+        "code": "https://github.com/p-lambda/dsir"
+      },
+      "tldr": "Selects pretraining text by importance resampling against a target distribution in n-gram feature space, making \"what belongs in this corpus\" a cheap, tunable decision.",
+      "stage": [
+        "curation"
+      ],
+      "signal": [
+        "intrinsic"
+      ],
+      "recursion": "single-pass",
+      "artifact": [
+        "data"
+      ],
+      "domain": [
+        "language"
+      ],
+      "contribution": "method",
+      "tags": [
+        "data-mixing"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2302.03169",
+      "primary_stage": "curation"
+    },
+    {
+      "id": "data-juicer-2023",
+      "title": "Data-Juicer: A One-Stop Data Processing System for Large Language Models",
+      "authors": [
+        "Daoyuan Chen",
+        "Yilun Huang",
+        "Zhijian Ma",
+        "Hesen Chen",
+        "Xuchen Pan",
+        "Ce Ge",
+        "Dawei Gao",
+        "Yuexiang Xie",
+        "Zhaoyang Liu",
+        "Jinyang Gao",
+        "et al."
+      ],
+      "year": 2023,
+      "venue": "arXiv 2023",
+      "venue_type": "preprint",
+      "links": {
+        "arxiv": "2309.02033",
+        "code": "https://github.com/modelscope/data-juicer"
+      },
+      "tldr": "Provides a composable operator library and recipe format for cleaning, deduplicating and mixing LLM corpora, so a data pipeline becomes a versioned artefact instead of a one-off script.",
+      "stage": [
+        "curation"
+      ],
+      "signal": [
+        "intrinsic"
+      ],
+      "recursion": "single-pass",
+      "artifact": [
+        "data"
+      ],
+      "domain": [
+        "language",
+        "multimodal"
+      ],
+      "contribution": "toolkit",
+      "tags": [
+        "data-mixing",
+        "deduplication"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2309.02033",
+      "primary_stage": "curation"
+    },
+    {
+      "id": "lets-verify-step-by-step-2023",
+      "title": "Let's Verify Step by Step",
+      "authors": [
+        "Hunter Lightman",
+        "Vineet Kosaraju",
+        "Yura Burda",
+        "Harri Edwards",
+        "Bowen Baker",
+        "Teddy Lee",
+        "Jan Leike",
+        "John Schulman",
+        "Ilya Sutskever",
+        "Karl Cobbe"
+      ],
+      "year": 2023,
+      "venue": "ICLR 2024",
+      "venue_type": "conference",
+      "links": {
+        "arxiv": "2305.20050",
+        "dataset": "https://github.com/openai/prm800k"
+      },
+      "tldr": "Compares outcome against process supervision on math and finds step-level reward models, trained on 800K human step labels, pick correct solutions far more reliably.",
+      "stage": [
+        "verification",
+        "assimilation"
+      ],
+      "signal": [
+        "peer-model",
+        "human"
+      ],
+      "recursion": "single-pass",
+      "artifact": [
+        "data",
+        "verifier"
+      ],
+      "domain": [
+        "math"
+      ],
+      "contribution": "method",
+      "tags": [
+        "process-reward"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2305.20050",
+      "primary_stage": "verification"
+    },
+    {
+      "id": "swe-bench-2023",
+      "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "authors": [
+        "Carlos E. Jimenez",
+        "John Yang",
+        "Alexander Wettig",
+        "Shunyu Yao",
+        "Kexin Pei",
+        "Ofir Press",
+        "Karthik Narasimhan"
+      ],
+      "year": 2023,
+      "venue": "ICLR 2024",
+      "venue_type": "conference",
+      "links": {
+        "arxiv": "2310.06770",
+        "project": "https://www.swebench.com",
+        "code": "https://github.com/princeton-nlp/SWE-bench"
+      },
+      "tldr": "Turns real GitHub issues and their merged fixes into an execution-verified task suite, giving self-improving code loops a ground truth that is expensive to game.",
+      "stage": [
+        "measurement"
+      ],
+      "signal": [
+        "verifier"
+      ],
+      "recursion": "single-pass",
+      "artifact": [
+        "environment"
+      ],
+      "domain": [
+        "code",
+        "agent"
+      ],
+      "contribution": "benchmark",
+      "tags": [],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2310.06770",
+      "primary_stage": "measurement"
+    },
+    {
+      "id": "curse-of-recursion-2023",
+      "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+      "authors": [
+        "Ilia Shumailov",
+        "Zakhar Shumaylov",
+        "Yiren Zhao",
+        "Yarin Gal",
+        "Nicolas Papernot",
+        "Ross Anderson"
+      ],
+      "year": 2023,
+      "venue": "arXiv 2023",
+      "venue_type": "preprint",
+      "links": {
+        "arxiv": "2305.17493"
+      },
+      "tldr": "Shows that training generation after generation on model output erodes the tails of the distribution first, so a closed synthetic loop forgets rare events before it degrades on average.",
+      "stage": [
+        "dynamics"
+      ],
+      "signal": [
+        "intrinsic"
+      ],
+      "recursion": "iterated",
+      "artifact": [
+        "data"
+      ],
+      "domain": [
+        "language",
+        "theory"
+      ],
+      "contribution": "analysis",
+      "tags": [
+        "diversity",
+        "model-collapse"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2305.17493",
+      "primary_stage": "dynamics"
+    },
+    {
+      "id": "voyager-2023",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+      "authors": [
+        "Guanzhi Wang",
+        "Yuqi Xie",
+        "Yunfan Jiang",
+        "Ajay Mandlekar",
+        "Chaowei Xiao",
+        "Yuke Zhu",
+        "Linxi Fan",
+        "Anima Anandkumar"
+      ],
+      "year": 2023,
+      "venue": "TMLR 2024",
+      "venue_type": "journal",
+      "links": {
+        "arxiv": "2305.16291",
+        "project": "https://voyager.minedojo.org/",
+        "code": "https://github.com/MineDojo/Voyager"
+      },
+      "tldr": "Runs a lifelong Minecraft agent that proposes its own curriculum and stores every verified program as a reusable skill, improving through a growing library rather than a weight update.",
+      "stage": [
+        "memory",
+        "curriculum"
+      ],
+      "signal": [
+        "verifier",
+        "environment"
+      ],
+      "recursion": "open-ended",
+      "artifact": [
+        "prompt",
+        "tools"
+      ],
+      "domain": [
+        "code",
+        "agent",
+        "games"
+      ],
+      "contribution": "method",
+      "tags": [
+        "agent-memory",
+        "open-endedness"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2305.16291",
+      "primary_stage": "memory"
+    },
+    {
+      "id": "constitutional-ai-2022",
+      "title": "Constitutional AI: Harmlessness from AI Feedback",
+      "authors": [
+        "Yuntao Bai",
+        "Saurav Kadavath",
+        "Sandipan Kundu",
+        "Amanda Askell",
+        "Jackson Kernion",
+        "Andy Jones",
+        "Anna Chen",
+        "Anna Goldie",
+        "Azalia Mirhoseini",
+        "Cameron McKinnon",
+        "et al."
+      ],
+      "year": 2022,
+      "venue": "arXiv 2022",
+      "venue_type": "tech-report",
+      "links": {
+        "arxiv": "2212.08073"
+      },
+      "tldr": "Replaces human harmlessness labels with a written constitution: the model critiques and revises its own answers, then a preference model is trained on those AI-authored comparisons.",
+      "stage": [
+        "generation",
+        "verification",
+        "assimilation"
+      ],
+      "signal": [
+        "self",
+        "peer-model"
+      ],
+      "recursion": "bootstrap",
+      "artifact": [
+        "data",
+        "weights"
+      ],
+      "domain": [
+        "language"
+      ],
+      "contribution": "method",
+      "tags": [
+        "rlaif"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2212.08073",
+      "primary_stage": "generation"
+    },
+    {
+      "id": "self-instruct-2022",
+      "title": "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
+      "authors": [
+        "Yizhong Wang",
+        "Yeganeh Kordi",
+        "Swaroop Mishra",
+        "Alisa Liu",
+        "Noah A. Smith",
+        "Daniel Khashabi",
+        "Hannaneh Hajishirzi"
+      ],
+      "year": 2022,
+      "venue": "ACL 2023",
+      "venue_type": "conference",
+      "links": {
+        "arxiv": "2212.10560",
+        "code": "https://github.com/yizhongw/self-instruct"
+      },
+      "tldr": "Bootstraps an instruction-tuning corpus out of a base model itself, sampling new tasks from a small human seed pool and filtering near-duplicates before fine-tuning on what survives.",
+      "stage": [
+        "generation",
+        "curation"
+      ],
+      "signal": [
+        "self",
+        "intrinsic"
+      ],
+      "recursion": "bootstrap",
+      "artifact": [
+        "data",
+        "weights"
+      ],
+      "domain": [
+        "language"
+      ],
+      "contribution": "method",
+      "tags": [
+        "instruction-tuning",
+        "rejection-sampling"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2212.10560",
+      "primary_stage": "generation"
+    },
+    {
+      "id": "star-2022",
+      "title": "STaR: Bootstrapping Reasoning With Reasoning",
+      "authors": [
+        "Eric Zelikman",
+        "Yuhuai Wu",
+        "Jesse Mu",
+        "Noah D. Goodman"
+      ],
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "venue_type": "conference",
+      "links": {
+        "arxiv": "2203.14465",
+        "code": "https://github.com/ezelikman/STaR"
+      },
+      "tldr": "Keeps only the self-generated rationales that reach the known answer, fine-tunes on them and repeats, turning answer checking into a renewable supply of reasoning traces.",
+      "stage": [
+        "generation",
+        "assimilation"
+      ],
+      "signal": [
+        "self",
+        "verifier"
+      ],
+      "recursion": "iterated",
+      "artifact": [
+        "data",
+        "weights"
+      ],
+      "domain": [
+        "language",
+        "math"
+      ],
+      "contribution": "method",
+      "tags": [
+        "expert-iteration",
+        "reasoning-traces",
+        "rejection-sampling"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/2203.14465",
+      "primary_stage": "generation"
+    },
+    {
+      "id": "poet-2019",
+      "title": "Paired Open-Ended Trailblazer (POET): Endlessly Generating Increasingly Complex and Diverse Learning Environments and Their Solutions",
+      "authors": [
+        "Rui Wang",
+        "Joel Lehman",
+        "Jeff Clune",
+        "Kenneth O. Stanley"
+      ],
+      "year": 2019,
+      "venue": "arXiv 2019",
+      "venue_type": "preprint",
+      "links": {
+        "arxiv": "1901.01753"
+      },
+      "tldr": "Co-evolves a population of agents together with the obstacle courses that challenge them, transferring solutions between niches so the task distribution keeps outrunning the solvers.",
+      "stage": [
+        "curriculum"
+      ],
+      "signal": [
+        "environment"
+      ],
+      "recursion": "open-ended",
+      "artifact": [
+        "weights",
+        "environment"
+      ],
+      "domain": [
+        "games"
+      ],
+      "contribution": "method",
+      "tags": [
+        "classic",
+        "evolution",
+        "open-endedness"
+      ],
+      "added": "2026-09-21",
+      "url": "https://arxiv.org/abs/1901.01753",
+      "primary_stage": "curriculum"
+    },
+    {
+      "id": "alphago-zero-2017",
+      "title": "Mastering the game of Go without human knowledge",
+      "authors": [
+        "David Silver",
+        "Julian Schrittwieser",
+        "Karen Simonyan",
+        "Ioannis Antonoglou",
+        "Aja Huang",
+        "Arthur Guez",
+        "Thomas Hubert",
+        "Lucas Baker",
+        "Matthew Lai",
+        "Adrian Bolton",
+        "et al."
+      ],
+      "year": 2017,
+      "venue": "Nature 2017",
+      "venue_type": "journal",
+      "links": {
+        "doi": "10.1038/nature24270"
+      },
+      "tldr": "Learns Go from random play by treating its own tree search as the teacher, evidence that a self-play data loop with no human games can overtake systems trained on them.",
+      "stage": [
+        "generation",
+        "assimilation",
+        "curriculum"
+      ],
+      "signal": [
+        "self",
+        "environment"
+      ],
+      "recursion": "online",
+      "artifact": [
+        "data",
+        "weights"
+      ],
+      "domain": [
+        "games"
+      ],
+      "contribution": "method",
+      "tags": [
+        "classic",
+        "expert-iteration",
+        "self-play"
+      ],
+      "added": "2026-09-21",
+      "url": "https://doi.org/10.1038/nature24270",
+      "primary_stage": "generation"
+    }
+  ]
+}

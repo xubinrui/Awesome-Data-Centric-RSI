@@ -1,0 +1,32 @@
+id: data-juicer-2023
+title: "Data-Juicer: A One-Stop Data Processing System for Large Language Models"
+authors:
+  - Daoyuan Chen
+  - Yilun Huang
+  - Zhijian Ma
+  - Hesen Chen
+  - Xuchen Pan
+  - Ce Ge
+  - Dawei Gao
+  - Yuexiang Xie
+  - Zhaoyang Liu
+  - Jinyang Gao
+  - et al.
+year: 2023
+venue: arXiv 2023
+venue_type: preprint
+links:
+  arxiv: "2309.02033"
+  code: https://github.com/modelscope/data-juicer
+tldr: >-
+  Provides a composable operator library and recipe format for cleaning,
+  deduplicating and mixing LLM corpora, so a data pipeline becomes a versioned
+  artefact instead of a one-off script.
+stage: [curation]
+signal: [intrinsic]
+recursion: single-pass
+artifact: [data]
+domain: [language, multimodal]
+contribution: toolkit
+tags: [data-mixing, deduplication]
+added: "2026-09-21"

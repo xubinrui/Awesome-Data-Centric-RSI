@@ -1,0 +1,7 @@
+# Pinned so that generated SVGs are byte-reproducible across machines and CI.
+# tests/test_figures.py only byte-compares the committed figures when the
+# installed matplotlib matches the pin below.
+PyYAML==6.0.1
+jsonschema==4.26.0
+matplotlib==3.11.2
+pytest==9.1.1

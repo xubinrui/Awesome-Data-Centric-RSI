@@ -1,0 +1,30 @@
+id: voyager-2023
+title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+authors:
+  - Guanzhi Wang
+  - Yuqi Xie
+  - Yunfan Jiang
+  - Ajay Mandlekar
+  - Chaowei Xiao
+  - Yuke Zhu
+  - Linxi Fan
+  - Anima Anandkumar
+year: 2023
+venue: TMLR 2024
+venue_type: journal
+links:
+  arxiv: "2305.16291"
+  project: https://voyager.minedojo.org/
+  code: https://github.com/MineDojo/Voyager
+tldr: >-
+  Runs a lifelong Minecraft agent that proposes its own curriculum and stores
+  every verified program as a reusable skill, improving through a growing
+  library rather than a weight update.
+stage: [memory, curriculum]
+signal: [verifier, environment]
+recursion: open-ended
+artifact: [prompt, tools]
+domain: [code, agent, games]
+contribution: method
+tags: [agent-memory, open-endedness]
+added: "2026-09-21"

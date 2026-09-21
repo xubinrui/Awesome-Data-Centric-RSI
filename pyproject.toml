@@ -1,0 +1,17 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = ["scripts"]
+addopts = "-q --strict-markers"
+markers = [
+    "network: talks to the internet; deselected by default in CI's fast job",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["scripts", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["B905"]

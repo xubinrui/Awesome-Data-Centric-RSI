@@ -1,0 +1,32 @@
+id: data-selection-survey-2024
+title: A Survey on Data Selection for Language Models
+authors:
+  - Alon Albalak
+  - Yanai Elazar
+  - Sang Michael Xie
+  - Shayne Longpre
+  - Nathan Lambert
+  - Xinyi Wang
+  - Niklas Muennighoff
+  - Bairu Hou
+  - Liangming Pan
+  - Haewon Jeong
+  - et al.
+year: 2024
+venue: arXiv 2024
+venue_type: preprint
+links:
+  arxiv: "2402.16827"
+  code: https://github.com/alon-albalak/data-selection-survey
+tldr: >-
+  Organises data selection for language models into one pipeline vocabulary,
+  covering filtering, deduplication, mixing and selection objectives across
+  pretraining and fine-tuning.
+stage: [curation]
+signal: [intrinsic]
+recursion: single-pass
+artifact: [data]
+domain: [language]
+contribution: survey
+tags: [data-mixing, deduplication]
+added: "2026-09-21"
